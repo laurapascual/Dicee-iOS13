@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    //IBPOutlet alloes me to references IU element
+    @IBOutlet weak var diceImageViewOne: UIImageView!
+    @IBOutlet weak var diceImageViewTwo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //WHO.WHAT = VALUE
+        diceImageViewOne.image = UIImage(named: "DiceSix")
+        diceImageViewTwo.image = UIImage(named: "DiceTwo")
     }
 
 
