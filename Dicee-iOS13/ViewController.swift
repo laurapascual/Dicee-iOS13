@@ -21,7 +21,12 @@ class ViewController: UIViewController {
         diceImageViewOne.image = UIImage(named: "DiceSix")
         diceImageViewTwo.image = UIImage(named: "DiceTwo")
     }
-
-
+    
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        print("Button got tapped")
+        diceImageViewOne.image = UIImage(named: "DiceFour")
+        diceImageViewTwo.image = UIImage(named: "DiceFour")
+    }
+    
 }
 
